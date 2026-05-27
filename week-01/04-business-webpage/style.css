@@ -1,0 +1,29 @@
+nav ul {
+  list-style: none;
+  display: flex;      
+  gap: 24px;         
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items:center;           
+  
+ 
+  background-color: rgb(145, 68, 145);
+  padding: 16px 32px;
+  
+}
+
+
+nav li {
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+nav li:hover {
+  color: #4f46e5;
+}

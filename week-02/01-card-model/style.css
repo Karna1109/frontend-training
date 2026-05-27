@@ -1,0 +1,83 @@
+      * {
+        box-sizing: border-box;
+        margin: 20px;
+        padding: 5px;
+        
+      }
+      .card1 {
+        border: 4px solid black;
+        border-radius: 10px;
+        background-color: aqua;
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 300px;
+        max-height: 250px;
+      }
+
+      .card2 {
+        border: 2px solid blueviolet;
+        border-radius: 5px;
+        background-color: burlywood;
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 250px;
+        max-height: 300px;
+      }
+      .btn{
+        background-color: red;
+        padding: 12px 24px;
+      }
+
+      /* 1st QUESTION CSS*/
+
+      .container {
+        display: flex;       
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .box {
+        width: 200px;
+        height: 100px;
+        background-color: #195a06; 
+        border-radius: 6px;
+      }
+
+      /* 2ND QUESTION CSS*/
+
+
+nav ul {
+  list-style: none;
+  display: flex;      
+  gap: 24px;         
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items:center;           
+  
+ 
+  background-color: rgb(145, 68, 145);
+  padding: 16px 32px;
+  
+}
+
+
+nav li {
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+nav li:hover {
+  color:lightgreen;
+}
+
+button:hover {
+  color:blue;
+}
+    
