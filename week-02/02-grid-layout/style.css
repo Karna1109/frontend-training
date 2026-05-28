@@ -1,67 +1,156 @@
 * {
-        box-sizing: border-box;
-        margin: 10px;
-        padding: 0px;
-        
-      }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
-h1,p{text-align: center;
-      }
+.header {
+  font-size: 36px;
+  color: rgb(2, 3, 52);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.description {
+  font-size: 18px;
+  color: rgb(2, 3, 52);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box1 {
+  border: 2px solid black;
+  max-width: 200px;
+  max-height: 100px;
+  padding: 20px;
+  background-color: rgb(2, 3, 52);
+  color: white;
+  border-radius: 6px;
+}
+
+.box2 {
+  border: 2px solid black;
+  max-width: 200px;
+  max-height: 100px;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 6px;
+}
+
+.box3 {
+  border: 2px solid black;
+  max-width: 200px;
+  max-height: 100px;
+  padding: 20px;
+  background-color: rgb(2, 3, 52);
+  color: white;
+  border-radius: 6px;
+}
+
+.btn {
+  border-radius: 6px;
+  background-color: blue;
+  color: aliceblue;
+}
+
+button:hover {
+  color: aquamarine;
+}
+
+/* New Box design */
 
 .container {
-        display: flex;       
-        background-color: white;
-        padding: 10px;
-        border-radius: 10px;
-      }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 920px;
+  margin: 0 auto;
+}
 
-      .box1 {
-        border: 2px solid black;
-        max-width: 200px;
-        max-height: 100px;
-        padding: 20px;
-        background-color: rgb(2, 3, 52); 
-        color: white;
-        border-radius: 6px;
-      }
+.card {
+  border: 1.2px solid lightgrey;
+  max-width: 400px;
+  min-height: 420px;
+  background-color: white;
+  color: black;
+  margin-bottom: auto;
+  border-radius: 24px;
+}
 
-      
+.card-header {
+  height: 144px;
+  background-color: #16171a;
+  color: white;
+  border-radius: 24px 24px 0px 0px;
+  padding: 36px;
+}
 
-      .box2 {
-        border: 2px solid black;
-        max-width: 200px;
-        max-height: 100px;
-        padding: 20px;
-        background-color: blue; 
-        border-radius: 6px;
-      }
+.card-header-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
 
-      .box3 {
-        border: 2px solid black;
-        max-width: 200px;
-        max-height: 100px;
-        padding: 20px;
-        background-color:rgb(2, 3, 52); 
-        color: white;
-        border-radius: 6px;
-      }
+.card-header-price-number {
+  font-size: 36px;
+}
 
-      .box {
-        border: 1px solid blue;
-        max-width: 400px;
-        max-height: 350px;
-        background-color: white;
-        color: black;
-        padding: 20px;
-        margin-bottom: auto;
-        border-radius: 6px;
-      }
-      .btn {
-        border-radius: 6px;
-        background-color: blue;
-        color:aliceblue;
-    
-      }
-      button:hover {
-        color:aquamarine;
-        }
+.card-body {
+  padding: 36px;
+}
+
+.card-body-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-body-content ul li {
+  list-style-type: none;
+}
+
+.card-body-content ul li span {
+  color: gray;
+  margin-right: 12px;
+}
+
+.card-footer {
+  padding: 0px 36px;
+}
+
+.card-footer .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #E0DCF9;
+  border: none;
+  border-radius: 999px !important;
+  color: #3F0169;
+  font-weight: 700;
+}
+
+.container .card:nth-child(2) {
+  border-color: #8a02e4;
+}
+
+.card:nth-child(2) .card-header {
+  background-color: #8a02e4;
+}
+
+.card:nth-child(2) .card-footer .btn {
+  background-color: #8a02e4;
+  color: white;
+}
+
+.card:nth-child(2) .card-header .card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  border: 1.2px solid white;
+  border-radius: 999px !important;
+  padding: 2px 8px;
+  font-size: x-small;
+}
